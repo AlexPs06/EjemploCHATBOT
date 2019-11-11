@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ApiAiClient } from 'api-ai-javascript/es6/ApiAiClient';
 import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
-import { Message } from 'src/app/models/Message.model';
+import { Message } from 'src/app/Models/Message.model';
 import { environment } from 'src/environments/environment';
 @Injectable({
   providedIn: 'root'

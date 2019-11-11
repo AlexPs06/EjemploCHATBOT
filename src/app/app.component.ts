@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Message } from './models/Message.model';
+import { Message } from './Models/Message.model';
 import { DialogflowServiceService } from './services/dialogflow-service.service';
 import { FormGroup, FormBuilder } from '@angular/forms';
 
