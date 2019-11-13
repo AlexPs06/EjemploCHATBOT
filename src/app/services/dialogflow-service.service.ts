@@ -15,6 +15,7 @@ export class DialogflowServiceService {
   constructor() {
 
   }
+  //metodo para enviar un mensaje al bot y esperar su respuesta
    converse(msg: String) {
     return this.client.textRequest(msg)
                .then(res => {
@@ -24,15 +25,11 @@ export class DialogflowServiceService {
                });
   }
 
+  //metodo para probar el bot 
   talk(){
     this.client.textRequest("hola").then(response=>{
       console.log(response.result.fulfillment.speech);
     })
 
-  }
-
-  // Adds message to source
-  update(msg: Message) {
-    return this.conversation.next([msg]);
   }
 }
